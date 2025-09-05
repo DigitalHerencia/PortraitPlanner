@@ -37,9 +37,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <header className="sticky top-0 z-50 w-full border-b bg-background">
-            <div className="container flex h-12 items-center">
+            <div className="container flex items-center h-12">
               <Link href="/" className="flex items-center space-x-2">
-                <Camera className="h-6 w-6" />
+                <Camera className="w-6 h-6" />
               </Link>
               <MainNav />
               <div className="ml-auto">
