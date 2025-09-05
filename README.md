@@ -21,8 +21,13 @@
 
 ---
 
-> **PortraitPlanner** helps photographers and studios plan sessions, organize inspiration, and streamline client communication.  
-> Built with **Next.js 15**, **React 19**, and a fully-typed component system, it delivers a clean, responsive UI with a frictionless user experience — perfect for modern creators.
+> **PortraitPlanner** helps photographers and studios plan sessions, organize inspiration, and streamline client communication. Built with **Next.js 15**, **React 19**, and a fully-typed component system, it delivers a clean, responsive UI with a frictionless user experience — perfect for modern creators.
+
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DigitalHerencia/PortraitPlanner/refs/heads/main/public/Screenshot_4-9-2025_225338_portraitplanner.vercel.app.jpeg" alt="PhotoPro Screenshot" width="100%" style="border-radius:12px;margin:1rem 0;">
+</p>
 
 ---
 
@@ -111,4 +116,12 @@ We welcome PRs, issues, and suggestions!
 
 MIT — free to use, modify, and contribute. See LICENSE.
 
-<p align="center"> <b>PortraitPlanner — Where Creativity Meets Workflow 📸✨</b> </p> ```
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DigitalHerencia/PortraitPlanner/refs/heads/main/public/Screenshot_4-9-2025_225410_portraitplanner.vercel.app.jpeg" alt="PhotoPro Screenshot" width="100%" style="border-radius:12px;margin:1rem 0;">
+</p>
+
+---
+
+<p align="center"> <b>PortraitPlanner — Where Creativity Meets Workflow 📸✨</b> </p> 
