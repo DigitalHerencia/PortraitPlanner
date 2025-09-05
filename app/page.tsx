@@ -7,18 +7,18 @@ const darkLogoClass = "mx-auto hidden dark:block filter brightness-90 contrast-1
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-background text-foreground overflow-hidden fixed inset-0">
+    <div className="fixed inset-0 flex items-center justify-center min-h-screen overflow-hidden bg-background text-foreground">
       <div className="text-center">
-        <div className="dark:bg-background my-auto overflow-hidden">
+        <div className="my-auto overflow-hidden dark:bg-background">
           <Image
-            src="https://raw.githubusercontent.com/DigitalHerencia/SouthwestMediasServices/refs/heads/main/public/SMS%20Logo/Black.png"
+            src="https://raw.githubusercontent.com/DigitalHerencia/PortraitPlanner/refs/heads/main/public/Grey.avif"
             alt="Southwest Media Services Logo"
             width={250}
             height={65}
             className="mx-auto dark:hidden"
           />
           <Image
-            src="https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/logo-i3YRDkVlHXfqy7kB19v4aujAtr9RZh.png"
+            src="https://raw.githubusercontent.com/DigitalHerencia/PortraitPlanner/refs/heads/main/public/Grey.avif"
             alt="Southwest Media Services Logo"
             width={100}
             height={33}
@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
         <div className="flex items-center justify-center space-x-2">
-          <Camera className="h-12 w-12 text-primary" />
+          <Camera className="w-12 h-12 text-primary" />
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">PhotoPro™</h1>
         </div>
         <p className="mx-auto max-w-[350px] text-muted-foreground mb-8">
