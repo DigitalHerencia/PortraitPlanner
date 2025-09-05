@@ -1,0 +1,348 @@
+{
+  "clientInfo": {
+    "name": "Alexis Montoya",
+    "email": "wekas97@gmail.com",
+    "phone": "915-861-3126",
+    "avatarUrl": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/alexis-QHhQ4WzJVbVTddBsFHOcnYNndsqFcu.jpg"
+  },
+  "weddingDetails": {
+    "date": "2025-03-01",
+    "time": "17:30",
+    "package": "ProXL Package - $750"
+  },
+  "venues": {
+    "ceremony": {
+      "name": "Las Cruces Heritage Farm and Ranch Museum",
+      "address": "4100 Dripping Springs Rd, Las Cruces, NM 88011"
+    },
+    "reception": {
+      "name": "Reception Venue",
+      "address": "1370 Cabin Creek Ave, Las Cruces, NM 88011"
+    }
+  },
+  "photographyPreferences": {
+    "style": "Casual and formal with no specific theme of backgrounds",
+    "postProcessing": "Natural style with some black and white photos"
+  },
+  "schedule": [
+    {
+      "id": 1,
+      "time": "10:30",
+      "title": "Bride Getting Ready",
+      "description": "Capture bride's preparation moments",
+      "location": "Bride's Suite",
+      "type": "prep"
+    },
+    {
+      "id": 2,
+      "time": "14:00",
+      "title": "Bride & Bridesmaids Portraits",
+      "description": "Group and individual shots of bride with bridesmaids",
+      "location": "Dripping Springs Park",
+      "type": "portrait"
+    },
+    {
+      "id": 3,
+      "time": "15:30",
+      "title": "Groom & Groomsmen Portraits",
+      "description": "Group and individual shots of groom with groomsmen",
+      "location": "Groom's Preparation Area",
+      "type": "portrait"
+    },
+    {
+      "id": 4,
+      "time": "17:30",
+      "title": "Ceremony",
+      "description": "Wedding ceremony coverage",
+      "location": "Las Cruces Heritage Farm and Ranch Museum",
+      "type": "ceremony"
+    },
+    {
+      "id": 5,
+      "time": "18:30",
+      "title": "Cocktail Hour",
+      "description": "Capture guests mingling and venue details",
+      "location": "Reception Venue",
+      "type": "reception"
+    },
+    {
+      "id": 6,
+      "time": "20:00",
+      "title": "Court Introduction & Speeches",
+      "description": "Bridal party introductions, toasts, and speeches",
+      "location": "Reception Venue",
+      "type": "reception"
+    },
+    {
+      "id": 7,
+      "time": "20:30",
+      "title": "Cake Cutting & First Dance",
+      "description": "Capture cake cutting ceremony and couple's first dance",
+      "location": "Reception Venue",
+      "type": "reception"
+    }
+  ],
+  "groupShots": [
+    { "id": 1, "description": "Bride + Mother" },
+    { "id": 2, "description": "Bride + Maid of Honor" },
+    { "id": 3, "description": "Bride + Sisters" },
+    { "id": 4, "description": "Bride + Bridesmaids" },
+    { "id": 5, "description": "Bride + Coco" },
+    { "id": 6, "description": "Bride + Lydia + Lydio" },
+    { "id": 7, "description": "Groom + Best Man" },
+    { "id": 8, "description": "Groom + Groomsmen" },
+    { "id": 9, "description": "Groom + Father" },
+    { "id": 10, "description": "Groom + Mother" },
+    { "id": 11, "description": "Groom + Parents" },
+    { "id": 12, "description": "Groom + Brother" },
+    { "id": 13, "description": "Bride & Groom + Bridal Party" },
+    { "id": 14, "description": "Bride & Groom + Groom's Parents" },
+    { "id": 15, "description": "Bride & Groom + Bride's Parents" },
+    { "id": 16, "description": "Bride & Groom + Brother / Officiant" },
+    { "id": 17, "description": "Bride & Groom + Sisters" },
+    { "id": 18, "description": "Bride & Groom + Lydia + Lydio" },
+    { "id": 19, "description": "Bride & Groom + Groom's Family" },
+    { "id": 20, "description": "Bride & Groom (next day)" }
+  ],
+  "shotList": [
+    {
+      "id": 1,
+      "title": "Bride's Final Touches",
+      "description": "Capture the bride having her makeup applied, focusing on her serene expression",
+      "category": "preparation",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-1-18zzImY1yaDEcAGfwQVQjWBftwmQAZ.png"
+    },
+    {
+      "id": 2,
+      "title": "Wedding Dress on Display",
+      "description": "Elegant shot of the wedding dress hanging in a doorway or window, showcasing its full length",
+      "category": "details",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-2-yax8VGFEamUqBqMavXrSsrB8TxC4f5.png"
+    },
+    {
+      "id": 3,
+      "title": "Bride's Shoes and Bouquet",
+      "description": "Artistic arrangement of the bride's shoes with her bouquet, capturing the colors and textures",
+      "category": "details",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-3-PTsNS96bM8L09JDbCXxNtpvF3puOGX.png"
+    },
+    {
+      "id": 4,
+      "title": "Wedding Rings on Invitation",
+      "description": "Close-up of the wedding rings placed on the wedding invitation, with floral accents",
+      "category": "details",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-4-Yysv6AbkhvH0agiZ7mwyOVEyjbcWOU.png"
+    },
+    {
+      "id": 5,
+      "title": "Bridal Accessories Flatlay",
+      "description": "Overhead shot of bridal accessories including jewelry, perfume, and hair accessories",
+      "category": "details",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-5-qLIBKJkmiFxRRjTOP4oxkeeAhXRqFX.png"
+    },
+    {
+      "id": 6,
+      "title": "Bridesmaids Helping the Bride",
+      "description": "Candid shot of bridesmaids assisting the bride with her dress, showing teamwork and excitement",
+      "category": "preparation",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-6-LPRDQUcGz79xkj4zljGZcMIrQWFxOz.png"
+    },
+    {
+      "id": 7,
+      "title": "Bride and Mother Moment",
+      "description": "Emotional embrace between the bride and her mother, capturing their close bond",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-7-gDQytV3ROGkY7T8m0fhE5Zg1BrTibV.png"
+    },
+    {
+      "id": 8,
+      "title": "Bride with Maid of Honor",
+      "description": "Joyful portrait of the bride and maid of honor sharing a laugh together",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-8-q1vKocEUw7uhrJQoXWudRgZrbBMVhl.png"
+    },
+    {
+      "id": 9,
+      "title": "Bride with Bridesmaids",
+      "description": "Group shot of the bride surrounded by her bridesmaids, all in matching robes",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-9-KVceCqBDi3NV1wBPIO05vNlokh2Ecu.png"
+    },
+    {
+      "id": 10,
+      "title": "Bridesmaids Reaction",
+      "description": "Capture the bridesmaids' excited reactions as they see the bride in her dress for the first time",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-10-vNkO1PwutFmY8xIikYtCluEXypSr2L.png"
+    },
+    {
+      "id": 11,
+      "title": "Bride with Flower Girl",
+      "description": "Sweet interaction between the bride and the flower girl, showcasing the generational aspect",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-11-iW6w6kZfw5OUAfQ2CXqmCdk6lySFHT.png"
+    },
+    {
+      "id": 12,
+      "title": "Bride with Parents",
+      "description": "Touching moment of the bride with both her parents, showing their pride and love",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-12-ZBOTzgIXzEcbdPBviunn6THEAmJPfz.png"
+    },
+    {
+      "id": 13,
+      "title": "Groom's Final Adjustments",
+      "description": "Close-up of the groom adjusting his bowtie, focusing on the details of his attire",
+      "category": "preparation",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-13-99RdxoFjQeSI5U781i0ubMm44gbkHD.png"
+    },
+    {
+      "id": 14,
+      "title": "Groom with Best Man",
+      "description": "Candid shot of the groom and best man sharing a laugh, showcasing their friendship",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-14-HaK7ctVZ0xd3wk6VWfXm2ZFuoZ3KKf.png"
+    },
+    {
+      "id": 15,
+      "title": "Groom with Groomsmen",
+      "description": "Group portrait of the groom with his groomsmen, all in matching suits",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-15-yBJDAEQVQjHnDkYdQJRgTRFiTXIQ5S.png"
+    },
+    {
+      "id": 16,
+      "title": "Groom and Father Moment",
+      "description": "Emotional interaction between the groom and his father as they prepare for the ceremony",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-16-uvL9YSEQt3NTWuqqP6uHntiTAHPYil.png"
+    },
+    {
+      "id": 17,
+      "title": "Groom with Mother",
+      "description": "Tender moment between the groom and his mother, possibly helping with final touches",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-17-vglDICfQz5qe9gKnkTEyDbCpa1RtOT.png"
+    },
+    {
+      "id": 18,
+      "title": "Groom with Parents",
+      "description": "Formal portrait of the groom standing between his proud parents",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-18-RspBxtSJVRCkrC2SV6bWmHEWPtypEZ.png"
+    },
+    {
+      "id": 19,
+      "title": "Groom's Party Candid",
+      "description": "Natural, candid shot of the groom and groomsmen interacting before the ceremony",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-19-HgrjX8yJ1pqzHwFQpF29bmFXl0fWsK.png"
+    },
+    {
+      "id": 20,
+      "title": "Ceremony Site Overview",
+      "description": "Wide-angle shot of the beautifully decorated outdoor ceremony location",
+      "category": "venue",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-20-2CHZox4QoXJ4DWVln7qYMWEQM3oa96.png"
+    },
+    {
+      "id": 21,
+      "title": "Bride's Processional",
+      "description": "Capture the bride walking down the aisle, focusing on her radiant expression",
+      "category": "ceremony",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-21-aKhtmEZpEeDhnjxLHMhkXhulQu4MtG.png"
+    },
+    {
+      "id": 22,
+      "title": "Exchange of Vows",
+      "description": "Intimate shot of the couple during their vow exchange, capturing their emotions",
+      "category": "ceremony",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-22-5ZJCQmjaFT2ufLzeUwQ8bmzntW44IW.png"
+    },
+    {
+      "id": 23,
+      "title": "Ring Exchange Close-up",
+      "description": "Detailed shot of the couple's hands as they exchange rings",
+      "category": "ceremony",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-23-jlFHXXDKOplV366pQlxjrkaOvLOpM3.png"
+    },
+    {
+      "id": 24,
+      "title": "First Kiss as Newlyweds",
+      "description": "Capture the couple's first kiss as a married couple, with guests applauding in the background",
+      "category": "ceremony",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-24-6Eru8IV7EKGvKezDi320hesnFsySX3.png"
+    },
+    {
+      "id": 25,
+      "title": "Newlyweds' Recessional",
+      "description": "Joyful shot of the couple walking back down the aisle together, showered with confetti or flower petals",
+      "category": "ceremony",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-25-lDDUaNDOvh3xezw2qo4FuaMUQCVmbj.png"
+    },
+    {
+      "id": 26,
+      "title": "Couple with Full Bridal Party",
+      "description": "Group portrait of the newlyweds with all bridesmaids and groomsmen",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-26-ri1NINWZTpT8ZOdvVmwUZYo2BOHAYA.png"
+    },
+    {
+      "id": 27,
+      "title": "Couple with Groom's Parents",
+      "description": "Formal portrait of the newlyweds with the groom's parents",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-27-dTclpMwP1ySGHytbm8ESKrHfBUkQP6.png"
+    },
+    {
+      "id": 28,
+      "title": "Couple with Bride's Parents",
+      "description": "Warm portrait of the newlyweds with the bride's parents",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-28-CG3z1ylJGDU9n5XJtPtoTEVL4HI33r.png"
+    },
+    {
+      "id": 29,
+      "title": "Couple with Officiant",
+      "description": "Group shot of the newlyweds with the wedding officiant",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-29-8eMzlbNDYnUbGNUKeyMt5Zi3nzgTi8.png"
+    },
+    {
+      "id": 30,
+      "title": "Couple with Siblings",
+      "description": "Group portrait of the newlyweds with their brothers and sisters",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-30-s4YTmyb2ePWZBOkI0D63vZcGNwIZbU.png"
+    },
+    {
+      "id": 31,
+      "title": "Couple with Close Friends",
+      "description": "Relaxed group shot of the newlyweds with their closest friends",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-31-kIjRQ1CTRmfz3NIPlzu8KPNcmCIjAq.png"
+    },
+    {
+      "id": 32,
+      "title": "Extended Family Portrait",
+      "description": "Large group photo of the newlyweds with both families",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-32-ebhTV4mI2wnDcpWxOt2FIzfIhtWX2j.png"
+    },
+    {
+      "id": 33,
+      "title": "Couple's Romantic Portrait",
+      "description": "Intimate portrait of the newlyweds in a scenic location",
+      "category": "portrait",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-34-lyGooNDyXPhXeaC1qlWOGfHvNf2TpA.png"
+    },
+    {
+      "id": 34,
+      "title": "Reception Venue Overview",
+      "description": "Wide-angle shot of the decorated reception area before guests arrive",
+      "category": "venue",
+      "imagePath": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/wedding%20poses-34-lyGooNDyXPhXeaC1qlWOGfHvNf2TpA.png"
+    }
+  ]
+}
+
