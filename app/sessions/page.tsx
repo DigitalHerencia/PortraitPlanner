@@ -14,14 +14,16 @@ interface Session {
 }
 
 export default function SessionsPage() {
-  const [sessions, setSessions] = useState<Session[]>([{ id: 1, name: "Alexis Montoya Wedding", date: "2025-03-01" }])
+  // Use anonymized example data for privacy. Dates default to "TBD" to avoid leaking real dates.
+  const [sessions, setSessions] = useState<Session[]>([{ id: 1, name: "Private Session", date: "TBD" }])
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const addNewSession = (sessionName: string) => {
     const newSession = {
       id: sessions.length + 1,
       name: sessionName,
-      date: new Date().toISOString().split("T")[0],
+      // Don't auto-fill with today's date — keep as TBD for privacy.
+      date: "TBD",
     }
     setSessions([...sessions, newSession])
   }

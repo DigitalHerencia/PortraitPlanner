@@ -14,7 +14,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { uploadImage } from "@/lib/blob-storage"
 
 interface GroupShot {
-  id: string
+  id: string | number
   description: string
 }
 
@@ -48,13 +48,13 @@ export default function ClientPage() {
     }
   }
 
-  const removeGroupShot = (id: string) => {
+  const removeGroupShot = (id: string | number) => {
     setGroupShots(groupShots.filter((shot) => shot.id !== id))
   }
 
   return (
-    <div className="container mx-auto py-6">
-      <div className="flex justify-between items-center mb-6">
+    <div className="container py-6 mx-auto">
+      <div className="flex items-center justify-between mb-6">
         <h1 className="text-3xl font-bold">Client Information</h1>
         <Link href="/schedule">
           <Button>View Schedule</Button>
@@ -68,9 +68,9 @@ export default function ClientPage() {
             <CardDescription>Wedding information and contact details</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="flex items-center space-x-4 mb-6">
+            <div className="flex items-center mb-6 space-x-4">
               <div className="relative">
-                <Avatar className="h-20 w-20">
+                <Avatar className="w-20 h-20">
                   <AvatarImage
                     src={config.clientInfo.avatarUrl || "/placeholder.svg?height=40&width=40"}
                     alt="Client"
@@ -85,37 +85,37 @@ export default function ClientPage() {
                 <div className="absolute -bottom-2 -right-2">
                   <Label
                     htmlFor="client-avatar-upload"
-                    className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-primary text-primary-foreground shadow-sm hover:bg-primary/90"
+                    className="flex items-center justify-center w-8 h-8 rounded-full shadow-sm cursor-pointer bg-primary text-primary-foreground hover:bg-primary/90"
                   >
-                    <Upload className="h-4 w-4" />
+                    <Upload className="w-4 h-4" />
                   </Label>
                   <Input
                     id="client-avatar-upload"
                     type="file"
                     className="hidden"
                     accept="image/*"
-                    onChange={async (e) => {
-                      if (e.target.files && e.target.files[0]) {
-                        try {
-                          setIsUploading(true)
-                          const file = e.target.files[0]
-                          const uploadedUrl = await uploadImage(file)
+                    onChange={async (e: any) => {
+                      const file = (e.target as any).files?.[0] ?? null
+                      if (!file) return
+                      try {
+                        setIsUploading(true)
+                        setAvatarFile(file)
+                        const uploadedUrl = await uploadImage(file)
 
-                          const updatedConfig = {
-                            ...config,
-                            clientInfo: {
-                              ...config.clientInfo,
-                              avatarUrl: uploadedUrl,
-                            },
-                          }
-
-                          setConfig(updatedConfig)
-                          localStorage.setItem("photoProConfig", JSON.stringify(updatedConfig))
-                          setIsUploading(false)
-                        } catch (error) {
-                          console.error("Error uploading image:", error)
-                          setIsUploading(false)
+                        const updatedConfig = {
+                          ...config,
+                          clientInfo: {
+                            ...config.clientInfo,
+                            avatarUrl: uploadedUrl,
+                          },
                         }
+
+                        setConfig(updatedConfig)
+                        localStorage.setItem("photoProConfig", JSON.stringify(updatedConfig))
+                        setIsUploading(false)
+                      } catch (error) {
+                        console.error("Error uploading image:", error)
+                        setIsUploading(false)
                       }
                     }}
                   />
@@ -131,22 +131,22 @@ export default function ClientPage() {
 
             <div className="space-y-4">
               <div className="flex items-center">
-                <Phone className="h-4 w-4 mr-2" />
+                <Phone className="w-4 h-4 mr-2" />
                 <span>{config.clientInfo.phone}</span>
               </div>
               <div className="flex items-center">
-                <Mail className="h-4 w-4 mr-2" />
+                <Mail className="w-4 h-4 mr-2" />
                 <span>{config.clientInfo.email}</span>
               </div>
               <div className="flex items-start">
-                <MapPin className="h-4 w-4 mr-2 mt-1" />
+                <MapPin className="w-4 h-4 mt-1 mr-2" />
                 <div>
                   <p>Ceremony: {config.venues.ceremony.name}</p>
                   <p className="text-sm text-muted-foreground">{config.venues.ceremony.address}</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <MapPin className="h-4 w-4 mr-2 mt-1" />
+                <MapPin className="w-4 h-4 mt-1 mr-2" />
                 <div>
                   <p>Reception: {config.venues.reception.name}</p>
                   <p className="text-sm text-muted-foreground">{config.venues.reception.address}</p>
@@ -164,15 +164,15 @@ export default function ClientPage() {
           <CardContent>
             <div className="space-y-4">
               <div className="flex items-center">
-                <Calendar className="h-4 w-4 mr-2" />
+                <Calendar className="w-4 h-4 mr-2" />
                 <span>Date: {new Date(config.weddingDetails.date).toLocaleDateString()}</span>
               </div>
               <div className="flex items-center">
-                <Users className="h-4 w-4 mr-2" />
+                <Users className="w-4 h-4 mr-2" />
                 <span>Package: {config.weddingDetails.package}</span>
               </div>
               <div className="flex items-start">
-                <Heart className="h-4 w-4 mr-2 mt-1" />
+                <Heart className="w-4 h-4 mt-1 mr-2" />
                 <div>
                   <p>Photography Preferences:</p>
                   <p className="text-sm text-muted-foreground">{config.photographyPreferences.style}</p>
@@ -184,10 +184,10 @@ export default function ClientPage() {
         </Card>
         <Card className="md:col-span-2">
           <CardHeader>
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-0">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
               <CardTitle>Group Shots</CardTitle>
               <Button onClick={() => setIsGroupShotsModalOpen(true)}>
-                <PlusCircle className="h-4 w-4 mr-2" />
+                <PlusCircle className="w-4 h-4 mr-2" />
                 Add Group Shots
               </Button>
             </div>
@@ -224,14 +224,14 @@ export default function ClientPage() {
             <DialogTitle>Add Group Shot</DialogTitle>
           </DialogHeader>
           <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
+            <div className="grid items-center grid-cols-4 gap-4">
               <Label htmlFor="description" className="text-right">
                 Description
               </Label>
               <Input
                 id="description"
                 value={newShot.description}
-                onChange={(e) => setNewShot({ ...newShot, description: e.target.value })}
+                onChange={(e: any) => setNewShot({ ...newShot, description: (e.target as any).value })}
                 className="col-span-3"
               />
             </div>

@@ -1,9 +1,9 @@
 {
   "clientInfo": {
-    "name": "Alexis Montoya",
-    "email": "wekas97@gmail.com",
-    "phone": "915-861-3126",
-    "avatarUrl": "https://a5fvmmg873kgkibm.public.blob.vercel-storage.com/alexis-QHhQ4WzJVbVTddBsFHOcnYNndsqFcu.jpg"
+    "name": "Client Name",
+    "email": "client@example.com",
+    "phone": "000-000-0000",
+    "avatarUrl": "/placeholder-user.jpg"
   },
   "weddingDetails": {
     "date": "2025-03-01",
